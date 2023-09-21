@@ -1,0 +1,15 @@
+CREATE TABLE atestados (
+id serial PRIMARY KEY, 
+nome VARCHAR(255) NOT NULL, 
+empresa VARCHAR(255) NOT NULL, 
+data DATE, 
+setor VARCHAR(255) NOT NULL, 
+cargo VARCHAR(255) NOT NULL, 
+data_atestado DATE, 
+tempo_atestado DOUBLE PRECISION, 
+motivo VARCHAR(255), 
+obs TEXT
+);
+
+INSERT INTO atestados (nome, empresa, data, setor, cargo, data_atestado, tempo_atestado, motivo, obs)
+VALUES ('João Silva', 'Empresa ABC', '2023-09-20', 'Departamento X', 'Analista de Dados', '2023-09-19', 3.5, 'Doença', 'Observações adicionais aqui.');
